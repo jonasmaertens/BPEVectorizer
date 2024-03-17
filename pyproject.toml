@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "wheel", "Cython", "numpy"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bpe_vectorizer"
+version = "0.1.0"
+authors = [
+    { name = "Jonas Märtens", email = "jonas.maertens@hotmail.de" }
+]
+description = "Fast one-hot encoding vectorizer with youtokentome byte-pair-encoding."
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "numpy",
+    "pandas",
+    "scipy",
+    "youtokentome"
+]
+
+[project.optional-dependencies]
+test = [
+    "flake8",
+    "pytest",
+]
